@@ -59,4 +59,4 @@ def test_actors(chrome):
     chrome.get("https://www.kinopoisk.ru/")
     chrome.find_element(By.NAME, "kp_query").send_keys("Брэд Питт")
     chrome.find_element(By.ID, "suggest-item-person-25584").click()
-    assert chrome.find_element(By.CSS_SELECTOR, "span[data-tid='f22e0093']").text == "Брэд Питт"
+    assert chrome.find_element(By.CSS_SELECTOR, "h1[data-tid='f22e0093']").text == "Брэд Питт"
